@@ -16,7 +16,7 @@ namespace ElasticsearchIssuesDemo.Controllers
     public class ValuesController : ControllerBase
     {
 
-        public static string _esUrl= "http://119.3.217.151:9202";
+        public static string _esUrl= "http://localhost:9202";
 
         private static readonly ElasticClient _elasticClient;
 
@@ -89,7 +89,7 @@ namespace ElasticsearchIssuesDemo.Controllers
             var now = DateTime.Now;
             var multiSearchRequest = new MultiSearchDescriptor();
             multiSearchRequest.MaxConcurrentSearches(5000);
-            for (int i = 0; i < 3000; i++)
+            for (int i = 0; i < 5000; i++)
             {
                 // 前一时间
                 multiSearchRequest = multiSearchRequest.Search<GatewayDevicePoint_ES>(s => s
