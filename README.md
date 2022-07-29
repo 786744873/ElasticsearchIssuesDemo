@@ -17,5 +17,5 @@ http://localhost:5000/js
 http://localhost:5000/sdk
 ```
 // 使用SDK方式无法获取到5千条数据，出现bug
-// Unable to get 5000 pieces of data using SDK, bug
+// Unable to get 5000 pieces of data using SDK, bug1
 ```
